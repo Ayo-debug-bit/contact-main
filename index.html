@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Frontend Mentor | Contact form</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body class="page">
+  <div class="toast hidden">
+    <div>
+      <img src="icon-success-check.svg" alt="toast check">
+      <span>Message Sent!</span>
+    </div>
+    <p>Thanks for completing the form.We'll be in touch soon!</p>
+  </div>
+<div class="container">
+<h1 class="h">Contact Us</h1>
+<div class="input-row">
+  <div class="input-group">
+<form action="/action.page.php">
+  <label for="fname">First Name *</label>
+  <input type="text" id="fname" name="fname" aria-required="true"><br>
+<span class="error empty hidden">This field is required</span>
+</form>
+</div>
+<div class="input-group">
+<form action="/action.page.php">
+  <label for="fname">Last Name *</label>
+  <input type="text" id="lname" name="lname"  aria-required="true"><br>
+<span class="error empty hidden">This field is required</span>
+</form>
+</div>
+</div>
+
+
+<div class="input-group">
+  <form action="/action.page.php">
+    <label for="fname">Email Address *</label>
+    <input type="text" id="place" name="place"  aria-required="true"><br>
+    <span class="error valid hidden">Please enter a valid email address</span>
+<span class="error empty hidden">This field is required</span>
+  </form>
+</div>
+
+
+  <p>Query Type *</p>
+ <div class="input-row">
+  <div class="qtype">
+  <form action="/action.page.php">
+    <input type="radio" id="enq" name="enq" value="general" aria-required="true">
+    <label for="request">General Enquiry</label>
+  </form>
+</div>
+<div class="qtype">
+  <form action="/action_page.php">
+    <input type="radio" id="boxb" name="boxb" value="support" aria-required="true">  
+    <label for="request">Support Request</label>
+  </form>
+</div>
+</div>
+
+  <form action="/action.page.php">
+    <label for="fname">Message *</label>
+    <textarea rows="5"></textarea>
+    <br>
+  </form>
+
+  <form action="/action_page.php">
+    <input type="checkbox" id="box1" name="box1" aria-required="true">  
+    <label for="box1">I consent to being contacted by the team *</label><br>
+<span class="error empty hidden">This field is required</span>
+  </form>
+
+  <button class="btn">Submit</button>
+</div>
+ 
+<script src="index.js"></script>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div>
+</body>
+</html>
